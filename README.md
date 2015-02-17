@@ -1,6 +1,6 @@
 
 =============
-Collection of web projects and examples
+Collection of java web projects and examples
 ===========================================================
 **Giuseppe Urso - GITHUB**
 
