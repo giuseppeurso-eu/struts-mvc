@@ -1,0 +1,33 @@
+<body>	
+ <div class="ritorna"><a href="./customers.do?action=multiRetrieve">Back to Customer List</a>
+</div>
+
+<h5 class="titoloElenco"> Customer Create or Update </h5><br><br>
+
+<div align="center">
+ <table class="tabellaElenco">
+ 
+   <form id="customerForm" name="customerForm" action="./customers.do?action=createOrUpdate"  method="post">
+     <input type="hidden"  id="id" name="id" value="$!customerForm.id">
+     <!--<tr><td>$!customerForm.id </td></tr>-->
+     <tr><td style="background:#EFF1FF;" ><h5>Name</h5></td>	
+         <td><input type="text"  name="name" value="$!customerForm.name" ></td>
+         <td style="background:#EFF1FF;"><h5>Lastname</h5></td>
+         <td><input type="text" name="lastname" value="$!customerForm.lastname"></td>
+     </tr><tr><td> </td><td> </td></tr>
+     <tr><td style="background:#EFF1FF;"><h5>Address</h5></td>	
+          <td><input  name="address" value="$!customerForm.address"></td>
+          <td style="background:#EFF1FF;"><h5>City</h5></td>
+          <td><input type="text"  name="city" value="$!customerForm.city" ></td>
+     </tr>
+     
+     <tr align="right">
+		<td colspan="6"><input type="submit" name="Save" value="Save"/></td>
+	 </tr>
+   </form>
+  
+ </table>	
+</div>				
+	
+ 
+</body>

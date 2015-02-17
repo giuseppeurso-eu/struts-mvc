@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+
+	<!-- ================================================ Form Bean Definitions -->
+	<form-beans>
+		<form-bean name="customerForm" type="com.demo.form.CustomerForm" />
+	</form-beans>
+
+	<!-- =========================================== Action Mapping Definitions -->
+	
+	<action-mappings>
+		<!-- A Velocity test -->
+		<action path="/testVelocity" forward="/velocityPage.vm" />
+		
+		<!-- Customer Actions -->
+		<action parameter="action" path="/customers" type="com.demo.action.CustomerAction" scope="request" name="customerForm">
+			
+				<forward name="showMulti" path="/pages/customers.vm" />
+				<forward name="showSingle" path="/pages/customer.vm" />
+				<forward name="successCreateOrUpdate" redirect="true" path="/customers.do?action=multiRetrieve" />
+				<forward name="successDelete" redirect="true" path="/customers.do?action=multiRetrieve" />			
+		</action>
+	</action-mappings>
+
+</struts-config>
+

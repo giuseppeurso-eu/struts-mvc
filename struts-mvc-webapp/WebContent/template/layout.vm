@@ -1,0 +1,27 @@
+
+<html>
+<head>
+	
+<link rel="stylesheet" href="css/my.css" media="all" type="text/css">	
+</head>
+
+<body>
+
+	<div align="center" >
+	<table class="tabellaLayout" >
+		<tr >
+			<td ><div align="center" >#parse("/template/header.vm")</div> </td>
+        </tr>
+		<tr >
+			<td ><div align="center">$screen_content</div></td>
+        </tr>
+		<tr >
+			<td ><div align="center">#parse("/template/footer.vm")</div></td>
+        </tr>
+    </table>
+	</div>
+
+	
+
+</body>
+</html>

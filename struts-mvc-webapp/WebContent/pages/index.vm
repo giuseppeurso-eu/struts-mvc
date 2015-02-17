@@ -1,0 +1,7 @@
+<body>
+	<p>WELCOME! This is a Struts-Hibernate-Velocity MVC demo</p>
+	<br>
+	<div>
+ 		<a href="./customers.do?action=multiRetrieve">--> Go to Customer List</a>
+ 	</div>
+</body>

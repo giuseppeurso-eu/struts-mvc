@@ -1,0 +1,52 @@
+
+<html>
+	<haed>
+		
+		<title></title>
+		
+</haed>
+<body>		
+		<h5 class="titoloElenco"> CUSTOMER LIST</h5>
+		
+		<div align="center">
+        
+        <table class="tabellaElenco">
+			<tr align="right">
+				<td colspan="6">
+					<a href="./customers.do?action=singleRetrieve">+ Create New</a>
+				</td>
+			</tr>
+		</table>	
+		
+        <table class="tabellaElenco">
+			<thead >
+				<tr >
+    				<th >Name</th>
+					<th >Lastname</th>
+					<th >Address</th>
+					<th >City</th>
+					<th>&nbsp;</th>
+					<th>&nbsp;</th>
+    			</tr>
+			</thead>
+      
+      		#foreach($Customers in $customerList)
+				<tr>
+					<td #alternateColorRows()>$!Customers.name</td>					
+					<td #alternateColorRows()>$!Customers.lastname</td>
+					<td #alternateColorRows()>$!Customers.address</td>
+					<td #alternateColorRows()>$!Customers.city</td>
+					<td #alternateColorRows()><a href="./customers.do?action=singleRetrieve&id=$Customers.id">Update</a></td>
+					<td #alternateColorRows()><a href="./customers.do?action=delete&id=$Customers.id">Delete</a></td>
+				</tr>
+			#end
+				
+			<tr align="left">
+				<td colspan="6">&nbsp;</td>
+			</tr>
+    				
+		</table>	
+		</div>				
+
+</body>
+</html>

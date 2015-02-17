@@ -1,0 +1,2 @@
+#set($test="Congratulations! You are using the Apache Velocity template engine")
+<h3>$!test<h3>

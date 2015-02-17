@@ -1,0 +1,56 @@
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	background-image:url("../images/sfondo.png"); 
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+table {
+	
+	width: 800px;
+	font-size: 12px;
+	border-collapse:separate;
+	border: 1px;
+	border-style: outset;
+}
+
+th {
+	background : #D1D8FF;
+	font-size: 12px;
+}
+
+td {
+	
+	font-size: 11px;
+}
+
+.tabellaLayout {
+	height: 600px;
+	width: 800px;
+	font-size: 12px;
+	border-collapse:separate;
+	border: 1px;
+	border-style: outset;
+}
+
+.tabellaElenco{
+	width: 700px;
+	font-size: 12px;
+	border-collapse:separate;
+	border: 1px;
+	border-style: outset;
+}
+
+
+.titoloElenco {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.divFooter{
+	 
+
+}
