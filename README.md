@@ -1,11 +1,4 @@
-
-=============
-Collection of java web projects and examples
-===========================================================
-**Giuseppe Urso - GITHUB**
-
-Url: https://github.com/giuseppeurso-eu/ 
-===========================================================
+# Collection of java web projects and examples
 
 This repository contains the source code of some java samples which refer to:
 
@@ -17,4 +10,4 @@ requires anyone who distributes code or a derivative work to make the
 source available under the same terms. V3 is similar to V2, but further
 restricts use in hardware that forbids software alterations (see LICENSE.txt).
 
-
+---
