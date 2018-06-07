@@ -10,4 +10,8 @@ requires anyone who distributes code or a derivative work to make the
 source available under the same terms. V3 is similar to V2, but further
 restricts use in hardware that forbids software alterations (see LICENSE.txt).
 
+## Notice: This code repository has moved to GitLab
+
+https://gitlab.com/giuseppeurso-eu/struts-mvc
+
 ---
